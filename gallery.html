@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معرض الصور | أكاديمية البيان لعلوم القرآن الكريم والقراءات</title>
+    <meta name="description" content="أكاديمية البيان لعلوم القرآن الكريم والقراءات لتحفيظ القرآن وتعليم التجويد وتصحيح التلاوة للأطفال والكبار.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container nav">
+            <a href="index.html" class="logo">
+                <img src="image/logo.png" alt="شعار الأكاديمية">أكاديمية البيان لعلوم القرآن الكريم والقراءات
+            </a>
+            <button class="burger" aria-label="القائمة">☰</button>
+            <ul class="menu">
+                <li><a href="index.html">الرئيسية</a></li>
+                <li><a href="about.html">من نحن</a></li>
+                <li><a href="programs.html">البرامج</a></li>
+                <li><a href="teachers.html">المحفظون</a></li>
+                <li><a href="gallery.html" class="active">المعرض</a></li>
+                <li><a href="contact.html">تواصل معنا</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="page-hero">
+        <h1>معرض الصور</h1>
+        <p>لحظات من حياة الأكاديمية</p>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="filters">
+                <button class="on" data-f="all">الكل</button>
+                <button data-f="classes">الفصول</button>
+                <button data-f="events">الأنشطة</button>
+                <button data-f="awards">التكريم والمسابقات</button>
+            </div>
+            <div class="gallery">
+                <div class="tile" data-cat="classes"><i>📚</i>الفصول الدراسية</div>
+                <div class="tile" data-cat="classes"><i>🕌</i>حلقة تحفيظ</div>
+                <div class="tile" data-cat="events"><i>🎉</i>حفل ختام الدورة</div>
+                <div class="tile" data-cat="events"><i>🌙</i>فعالية رمضانية</div>
+                <div class="tile" data-cat="awards"><i>🏅</i>تكريم الحفاظ</div>
+                <div class="tile" data-cat="awards"><i>🏆</i>مسابقة القرآن السنوية</div>
+                <div class="tile" data-cat="classes"><i>👦</i>حلقة الأطفال</div>
+                <div class="tile" data-cat="events"><i>🤝</i>لقاء أولياء الأمور</div>
+                <div class="tile" data-cat="awards"><i>📜</i>توزيع الشهادات</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 أكاديمية القرآن الكريم — جميع الحقوق محفوظة</p>
+        <p>
+            <a href="contact.html#register">سجّل الآن</a> ·
+            <a href="contact.html">تواصل معنا</a>
+        </p>
+    </footer>
+
+    <a class="wa-float" href="https://wa.me/201000000000" target="_blank" aria-label="واتساب"><i data-lucide="message-circle"></i></a>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>تواصل معنا | أكاديمية البيان لعلوم القرآن الكريم والقراءات</title>
+<meta name="description" content="أكاديمية البيان لعلوم القرآن الكريم والقراءات لتحفيظ القرآن وتعليم التجويد وتصحيح التلاوة للأطفال والكبار.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a href="index.html" class="logo"><img src="image/logo.png">أكاديمية البيان لعلوم القرآن الكريم والقراءات</a>
+    <button class="burger" aria-label="القائمة">☰</button>
+    <ul class="menu">
+      <li><a href="index.html">الرئيسية</a></li>
+      <li><a href="about.html">من نحن</a></li>
+      <li><a href="programs.html">البرامج</a></li>
+      <li><a href="teachers.html">المحفظون</a></li>
+      <li><a href="gallery.html">المعرض</a></li>
+      <li><a href="contact.html" class="active">تواصل معنا</a></li>
+    </ul>
+  </div>
+</header>
+<div class="page-hero">
+  <h1>تواصل معنا</h1>
+  <p>يسعدنا استقبال استفساراتكم وطلبات الالتحاق</p>
+</div>
+<section>
+  <div class="container two" style="align-items:start">
+    <div class="box reveal">
+      <h2 style="font-family:Amiri,serif;color:#0f5132">بيانات التواصل</h2>
+      <ul class="info">
+        <li><b><i data-lucide="map-pin"></i> العنوان:</b> القاهرة، مصر — (عدّل العنوان)</li>
+        <li><b><i data-lucide="phone"></i> الهاتف:</b> <span dir="ltr">+20 155 136 8980</span></li>
+        <li><b><i data-lucide="message-circle"></i> واتساب:</b> <a href="https://wa.me/201551368980" target="_blank">راسلنا مباشرة</a></li>
+        <li><b><i data-lucide="mail"></i> البريد:</b> bayanacademy91@gmail.com</li>
+        <li><b><i data-lucide="clock"></i> المواعيد:</b> السبت – الخميس، 9 ص – 9 م</li>
+      </ul>
+      <iframe src="https://www.google.com/maps?q=Cairo,Egypt&output=embed" loading="lazy" title="موقع الأكاديمية"></iframe>
+    </div>
+    <div class="box reveal" id="register">
+      <h2 style="font-family:Amiri,serif;color:#0f5132">نموذج التسجيل والاستفسار</h2>
+      <form id="enrollForm" onsubmit="return false">
+        <label>اسم الطالب</label>
+        <input name="name" required>
+        <label>العمر</label>
+        <input name="age" type="number" min="3" max="90" required>
+        <label>رقم الهاتف</label>
+        <input name="phone" type="tel" required dir="ltr" style="text-align:right">
+        <label>البرنامج المطلوب</label>
+        <select name="program" required>
+          <option value="">اختر البرنامج</option>
+          <option>تحفيظ القرآن الكريم</option>
+          <option>أحكام التجويد</option>
+          <option>تصحيح التلاوة ومخارج الحروف</option>
+          <option>تأسيس الأطفال</option>
+          <option>المراجعة والتثبيت</option>
+        </select>
+        <label>ملاحظات إضافية</label>
+        <textarea name="notes"></textarea>
+        <div class="btns">
+          <button type="button" class="btn wa" id="sendWa">إرسال عبر واتساب</button>
+          <button type="button" class="btn green" id="sendMail">إرسال عبر البريد</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>© 2026 أكاديمية البيان لعلوم القرآن الكريم والقراءات — جميع الحقوق محفوظة</p>
+  <p><a href="contact.html#register">سجّل الآن</a> · <a href="contact.html">تواصل معنا</a></p>
+</footer>
+<a class="wa-float" href="https://wa.me/201551368980" target="_blank" aria-label="واتساب"><i data-lucide="message-circle"></i></a>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
