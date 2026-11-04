@@ -303,3 +303,196 @@ footer a{color:#e6c35c}
         height: 38px;
     }
 }
+.social-section {
+    padding: 70px 0;
+    background: linear-gradient(180deg, #f8faf8 0%, #eef5f0 100%);
+    border-top: 1px solid #e3ece6;
+}
+ 
+.social-section .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+ 
+.social-section .section-title h2 {
+    color: #0f5132;
+    font-family: 'Amiri', serif;
+    font-size: 34px;
+    margin: 0 0 12px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 14px;
+}
+ 
+.social-section .section-title h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+    width: 60px;
+    height: 3px;
+    border-radius: 3px;
+    background: #c9a227;
+}
+ 
+.social-section .section-title p {
+    color: #666;
+    font-size: 16px;
+    margin: 0;
+}
+ 
+.social-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 850px;
+    margin: auto;
+}
+ 
+.social-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 24px;
+    background: #ffffff;
+    border: 1px solid #e6eee9;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #333;
+    box-shadow: 0 6px 22px rgba(15, 81, 50, 0.07);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+ 
+/* شريط لوني جانبي */
+.social-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    background: #0f5132;
+    transition: width 0.3s ease;
+}
+ 
+.social-card.facebook::before { background: #1877f2; }
+.social-card.telegram::before { background: #229ed9; }
+ 
+.social-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
+}
+ 
+.social-card.facebook:hover { border-color: #1877f2; }
+.social-card.telegram:hover { border-color: #229ed9; }
+ 
+.social-card:hover::before {
+    width: 8px;
+}
+ 
+.social-card:focus-visible {
+    outline: 3px solid #c9a227;
+    outline-offset: 3px;
+}
+ 
+/* الأيقونة الأولى (lucide بتحول i إلى svg فالاتنين متغطيين) */
+.social-card > i:first-child,
+.social-card > svg:first-child {
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    padding: 13px;
+    border-radius: 14px;
+    color: #ffffff;
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+ 
+.social-card:hover > i:first-child,
+.social-card:hover > svg:first-child {
+    transform: scale(1.08) rotate(-6deg);
+}
+ 
+/* أيقونة السهم */
+.social-card > i:last-child,
+.social-card > svg:last-child {
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    margin-right: auto;
+    color: #aaaaaa;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+ 
+.social-card:hover > i:last-child,
+.social-card:hover > svg:last-child {
+    transform: translate(-4px, -4px);
+}
+ 
+.social-card.facebook:hover > svg:last-child,
+.social-card.facebook:hover > i:last-child { color: #1877f2; }
+ 
+.social-card.telegram:hover > svg:last-child,
+.social-card.telegram:hover > i:last-child { color: #229ed9; }
+ 
+.social-card h3 {
+    margin: 0 0 6px;
+    font-size: 19px;
+    color: #1f2d26;
+}
+ 
+.social-card p {
+    margin: 0;
+    color: #777777;
+    font-size: 14px;
+    line-height: 1.6;
+}
+ 
+.facebook > i:first-child,
+.facebook > svg:first-child {
+    background: linear-gradient(135deg, #1877f2, #0c5dc7);
+    box-shadow: 0 6px 14px rgba(24, 119, 242, 0.35);
+}
+ 
+.telegram > i:first-child,
+.telegram > svg:first-child {
+    background: linear-gradient(135deg, #2aabee, #1a86bb);
+    box-shadow: 0 6px 14px rgba(34, 158, 217, 0.35);
+}
+ 
+@media (max-width: 600px) {
+    .social-section {
+        padding: 50px 0;
+    }
+ 
+    .social-section .section-title h2 {
+        font-size: 27px;
+    }
+ 
+    .social-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 0 4px;
+    }
+ 
+    .social-card {
+        padding: 18px;
+    }
+}
+.social-card {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.social-card > div {
+    flex: 1;
+}
+
+.social-card .facebook-icon {
+    font-size: 38px;
+    min-width: 40px;
+}
