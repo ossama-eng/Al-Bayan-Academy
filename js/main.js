@@ -1,4 +1,4 @@
-var WA='201000000000',MAIL='info@quranacademy.com';
+var WA='201551368980',MAIL='info@quranacademy.com';
 document.querySelector('.burger').onclick=function(){document.querySelector('.menu').classList.toggle('open')};
 var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}})},{threshold:.15});
 document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
